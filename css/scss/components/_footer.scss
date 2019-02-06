@@ -1,0 +1,21 @@
+.footer{
+    background: $cor-foco-regular-dark1;
+    padding: 25px 0;
+}
+.footer__container{
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__social{
+    display: flex;
+    justify-content: flex-end;
+    @include responsive(mobile){
+        margin-top: 10px;
+    }
+}
+.footer__social img{
+    padding: 0 10px;
+    @include responsive(tablet){
+        padding-top: 20px;
+    }
+}

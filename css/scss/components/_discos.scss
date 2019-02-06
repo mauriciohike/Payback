@@ -1,0 +1,39 @@
+.discos__row{
+    margin: 0;
+}
+.discos{
+    padding: 60px 0;
+}
+.discos__img{
+    max-width: 90%;
+}
+.discos__title{
+    @include type__secundario(64);
+}
+.discos__text{
+    padding-left: 50px;
+    @include responsive(mobile){
+        padding: 0;
+    }
+}
+.discos__lista{
+    padding: 60px 0;
+}
+.discos__item{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $cor-suporte-light-text;
+}
+.discos__item p{
+    padding-left: 16px;
+}
+.discos__copy{
+    padding-top: 20px;
+}
+.enfase{
+    color: $cor-foco-regular;
+}
+.discos__img, .discos__text{
+    opacity: 0;
+}

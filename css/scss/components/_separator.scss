@@ -1,0 +1,21 @@
+.separator{
+    background: url("../css/scss/img/bg-separador.jpg");
+    background-size: cover;
+    padding: 128px 0;
+}
+.separator__quote{
+    @include type__principal(64);
+    color: $cor-suporte-light-text;
+    text-align: center;
+    @include responsive(mobile){
+        @include type__principal(48);
+    }
+}
+.separator__quote cite{
+    display: block;
+    margin-top: 32px;
+    @include type__principal(24);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}

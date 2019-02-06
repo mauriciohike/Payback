@@ -1,0 +1,11 @@
+.btn{
+    padding: 16px 32px;
+}
+.btn__full{
+    background: $cor-foco-regular;
+    color: $cor-suporte-light-text;
+    transition: all .3s;
+    &:hover{
+        background: $cor-foco-regular-dark;
+    }
+}

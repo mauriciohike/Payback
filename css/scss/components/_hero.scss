@@ -1,0 +1,22 @@
+.hero{
+    max-width: 100%;
+    background: url("../css/scss/img/bg-hero.jpg");
+    background-size: cover;
+    color: $cor-suporte-light-text;
+}
+.hero__content{
+    padding: 128px 0;
+    max-width: 960px;
+    @include responsive(mobile){
+        padding: 100px 0;
+    }
+}
+.hero__title{
+    @include type__secundario(64);
+}
+.hero__btn{
+    margin-top: 32px;
+}
+.hero__title, .hero__copy, .hero__btn{
+    opacity: 0;
+}

@@ -1,0 +1,42 @@
+.estilos{
+    padding: 60px 0;
+}
+.estilos__title{
+    @include type__secundario(64);
+    margin: 0 auto;
+}
+.estilo__content{
+    margin: 50px 0;
+    display: flex;
+    @include responsive(tablet){
+        margin: 20px 0;
+    }
+}
+.estilo__bg-img{
+    padding: 90px 150px;
+    width: 400px;
+    @include responsive(tablet){
+        display: none;
+    }
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-rock{
+    background: url("../css/scss/img/bg-rock.jpg");
+}
+.bg-jazz{
+    background: url("../css/scss/img/bg-jazz.jpg"); 
+}
+.bg-classic{
+    background: url("../css/scss/img/bg-classic.jpg"); 
+}
+.estilo__subtitle{
+    @include type__principal(64);
+    color: $cor-suporte-light-text;
+}
+.estilo__bg-black{
+    background: $cor-suporte-dark1;
+    padding: 20px;
+}

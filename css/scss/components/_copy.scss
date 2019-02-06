@@ -1,0 +1,21 @@
+.copy{
+    background: url("../css/scss/img/bg-copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0;
+}
+.copy__quote{
+    color: $cor-suporte-light-text;
+    text-align: center;
+    margin: 0 auto;
+    @include type__principal(24);
+}
+.copy__quote cite{
+    display: block;
+    margin-top: 16px;
+    @include type__principal(18);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}

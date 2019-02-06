@@ -1,0 +1,30 @@
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    @include responsive(mobile){
+        max-width: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include responsive(tablet){
+        max-width: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@mixin flex-item {
+    margin: 0 10px;
+    flex: 1;
+    @include responsive(mobile){
+        margin: 10px 0;
+    }
+}
+@mixin  flex-item-fluid {
+    margin: 0;
+    flex: 1;
+    @include responsive(mobile){
+        margin: 10px 0;
+    }
+}

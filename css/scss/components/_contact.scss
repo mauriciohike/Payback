@@ -1,0 +1,41 @@
+.contact{
+    background: $cor-suporte-dark1;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__container{
+    flex-direction: column;
+    @include responsive(mobile){
+        margin: 0;
+    }
+}
+.contact__title{
+    margin-bottom: 60px;
+    color: $cor-suporte-light-text;
+}
+form{
+    width: 570px;
+    margin: 0;
+    @include responsive(tablet){
+        width: 280px;
+        margin: 0;
+    }
+}
+label{
+    display: block;
+    color: $cor-suporte-light-text;
+}
+input[type="text"], textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid $cor-foco-regular;
+    padding: 10px;
+    color: $cor-suporte-light-text;
+}
+.btn__contact{
+    float: right;
+    margin: 0;
+}

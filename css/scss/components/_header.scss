@@ -1,0 +1,49 @@
+.header{
+    background: $cor-suporte-dark1;
+    color: $cor-suporte-light-text;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.header__container{
+    align-items: center;
+    @include responsive(mobile){
+        flex-direction: row;
+    }
+}
+.menu__icon{
+    width: 100%;
+    text-align: right;
+    padding: 15px 24px;
+    cursor: pointer;
+    display: none;
+}
+.navbar__menu{
+    float: right;
+}
+.navbar__item{
+    display: inline-block;
+    padding: 20px;
+    transition: all 0.3s;
+    &:hover{
+        background: $cor-foco-regular;
+    }
+}
+.navbar__item a, :active{
+    color: $cor-suporte-light-text;
+}
+@media (max-width: 960px){
+    .logo{
+        display: none;
+    }
+    .navbar__item{
+        padding: 10px;
+    }
+    .navbar__menu{
+        float: none;
+        text-align: center;
+    }
+    .header__container{
+        justify-content: center;
+    }
+}

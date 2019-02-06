@@ -1,0 +1,23 @@
+.container{
+    @include flex;
+    .row{
+        @include flex-item;
+    }
+    .row-fluid{
+        @include flex-item-fluid;
+    }
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+body{
+    @include type__principal(18);
+    background: $cor-suporte-light;
+    color: $cor-suporte-dark-text;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
